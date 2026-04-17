@@ -1,5 +1,5 @@
 streamlit
-tensorflow-cpu==2.13.0
+tensorflow==2.10.0
 numpy
 pandas
 Pillow
