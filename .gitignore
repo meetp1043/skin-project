@@ -5,7 +5,4 @@ __pycache__/
 *.pyd
 
 data/
-outputs/
-*.h5
-
 .env
