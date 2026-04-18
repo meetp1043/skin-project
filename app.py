@@ -16,6 +16,9 @@ import cv2
 import time
 from utils.gradcam import get_gradcam
 from tensorflow.keras.applications.efficientnet import preprocess_input
+import tensorflow as tf
+import streamlit as st
+st.write("TF Version:", tf.__version__)
 
 # ── Page configuration (must be first Streamlit call) ────────────────────────
 st.set_page_config(
