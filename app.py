@@ -29,7 +29,7 @@ st.set_page_config(
 @st.cache_resource
 def load_model():
     import tensorflow as tf
-    MODEL_PATH = "outputs/models/best_model.h5"
+    MODEL_PATH = "outputs/models/best_model.keras"
     if not os.path.exists(MODEL_PATH):
         return None
     return tf.keras.models.load_model(MODEL_PATH)
