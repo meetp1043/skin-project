@@ -16,9 +16,6 @@ import cv2
 import time
 from utils.gradcam import get_gradcam
 from tensorflow.keras.applications.efficientnet import preprocess_input
-import tensorflow as tf
-import streamlit as st
-st.write("TF Version:", tf.__version__)
 
 # ── Page configuration (must be first Streamlit call) ────────────────────────
 st.set_page_config(
@@ -32,7 +29,7 @@ st.set_page_config(
 @st.cache_resource
 def load_model():
     import tensorflow as tf
-    MODEL_PATH = "outputs/models/best_model.keras"
+    MODEL_PATH = "outputs/models/best_model.h5"
     if not os.path.exists(MODEL_PATH):
         return None
     return tf.keras.models.load_model(MODEL_PATH)
